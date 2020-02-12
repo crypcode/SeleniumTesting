@@ -41,6 +41,7 @@ public class Selenium {
         producerField.sendKeys(keyword3);
         WebElement sendfield = browser.findElement(By.name("insert"));
         sendfield.click();
+        WebElement getInfo = browser.findElement(By.className("msg-bad"));
 
     }
     public static void irasoTrynimas(String keyword){
@@ -48,6 +49,7 @@ public class Selenium {
         idField.sendKeys(keyword);
         WebElement deletefield = browser.findElement(By.name("delete"));
         deletefield.click();
+        WebElement getInfo = browser.findElement(By.className("msg-good"));
 
     }
     public static void irasoRedagavimas(String keyword,String keyword2,String keyword3,String keyword4){
@@ -61,6 +63,7 @@ public class Selenium {
         producerField.sendKeys(keyword4);
         WebElement updatefield = browser.findElement(By.name("update"));
         updatefield.click();
+        WebElement getInfo = browser.findElement(By.className("msg-good"));
 
     }
     public static void neleistinasIrasoRedagavimas(String keyword,String keyword2,String keyword3,String keyword4){
@@ -74,6 +77,7 @@ public class Selenium {
         producerField.sendKeys(keyword4);
         WebElement updatefield = browser.findElement(By.name("update"));
         updatefield.click();
+        WebElement getInfo = browser.findElement(By.className("msg-bad"));
 
     }
 

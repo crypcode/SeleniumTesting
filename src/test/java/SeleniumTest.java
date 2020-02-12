@@ -11,15 +11,19 @@ public class SeleniumTest {
         public void pridetiIrasaTest(){
         Selenium.pridetiIrasa("Baranauskas","Drama","Nelabai");
     }
+    @Test
         public void blogasIrasasTest(){
         Selenium.blogasIrasas("@@@","@@","@");
     }
-    public void irasoTrynimasTest(){
+    @Test
+        public void irasoTrynimasTest(){
         Selenium.irasoTrynimas("670");
     }
-    public void irasoRedagavimasTest(){
+    @Test
+        public void irasoRedagavimasTest(){
         Selenium.irasoRedagavimas("671","Hotel artemis","Veiksmo","Nezinomas");
     }
+    @Test
     public void illegalRedagavimasTest(){
         Selenium.neleistinasIrasoRedagavimas("670","!!!!","!!!!!","!!!!!!");
     }
